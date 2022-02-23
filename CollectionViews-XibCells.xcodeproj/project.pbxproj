@@ -13,6 +13,10 @@
 		FCAD08FB27C6883A00040FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAD08F927C6883A00040FBF /* Main.storyboard */; };
 		FCAD08FD27C6883C00040FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCAD08FC27C6883C00040FBF /* Assets.xcassets */; };
 		FCAD090027C6883C00040FBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAD08FE27C6883C00040FBF /* LaunchScreen.storyboard */; };
+		FCAD090927C68B0600040FBF /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD090727C68B0600040FBF /* CustomCollectionViewCell.swift */; };
+		FCAD090A27C68B0600040FBF /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAD090827C68B0600040FBF /* CustomCollectionViewCell.xib */; };
+		FCAD090F27C6913400040FBF /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD090D27C6913400040FBF /* ImageCollectionViewCell.swift */; };
+		FCAD091027C6913400040FBF /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAD090E27C6913400040FBF /* ImageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		FCAD08FC27C6883C00040FBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCAD08FF27C6883C00040FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCAD090127C6883C00040FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCAD090727C68B0600040FBF /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		FCAD090827C68B0600040FBF /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		FCAD090D27C6913400040FBF /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		FCAD090E27C6913400040FBF /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,33 @@
 			children = (
 				FCAD08F327C6883A00040FBF /* AppDelegate.swift */,
 				FCAD08F527C6883A00040FBF /* SceneDelegate.swift */,
-				FCAD08F727C6883A00040FBF /* ViewController.swift */,
+				FCAD090C27C68B1500040FBF /* Controller */,
+				FCAD090B27C68B0E00040FBF /* Views */,
 				FCAD08F927C6883A00040FBF /* Main.storyboard */,
 				FCAD08FC27C6883C00040FBF /* Assets.xcassets */,
 				FCAD08FE27C6883C00040FBF /* LaunchScreen.storyboard */,
 				FCAD090127C6883C00040FBF /* Info.plist */,
 			);
 			path = "CollectionViews-XibCells";
+			sourceTree = "<group>";
+		};
+		FCAD090B27C68B0E00040FBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD090727C68B0600040FBF /* CustomCollectionViewCell.swift */,
+				FCAD090827C68B0600040FBF /* CustomCollectionViewCell.xib */,
+				FCAD090D27C6913400040FBF /* ImageCollectionViewCell.swift */,
+				FCAD090E27C6913400040FBF /* ImageCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCAD090C27C68B1500040FBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD08F727C6883A00040FBF /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +156,8 @@
 				FCAD090027C6883C00040FBF /* LaunchScreen.storyboard in Resources */,
 				FCAD08FD27C6883C00040FBF /* Assets.xcassets in Resources */,
 				FCAD08FB27C6883A00040FBF /* Main.storyboard in Resources */,
+				FCAD090A27C68B0600040FBF /* CustomCollectionViewCell.xib in Resources */,
+				FCAD091027C6913400040FBF /* ImageCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCAD08F827C6883A00040FBF /* ViewController.swift in Sources */,
+				FCAD090F27C6913400040FBF /* ImageCollectionViewCell.swift in Sources */,
 				FCAD08F427C6883A00040FBF /* AppDelegate.swift in Sources */,
 				FCAD08F627C6883A00040FBF /* SceneDelegate.swift in Sources */,
+				FCAD090927C68B0600040FBF /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
