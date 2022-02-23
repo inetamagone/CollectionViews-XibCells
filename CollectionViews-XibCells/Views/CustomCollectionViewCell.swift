@@ -8,11 +8,11 @@
 import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
-
+    
     static var reuseId: String = "customCell"
     
     @IBOutlet weak var commonView: UIView!
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var myCollectionView: UICollectionView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,9 +37,9 @@ class CustomCollectionViewCell: UICollectionViewCell {
     }
     
     func setupCell() {
+        myCollectionView.dataSource = self
+        myCollectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: ImageCollectionViewCell.reuseId)
         backgroundColor = .green
-        collectionView.dataSource = self
-        collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: ImageCollectionViewCell.reuseId)
     }
 }
 
@@ -50,7 +50,8 @@ extension CustomCollectionViewCell: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCollectionViewCell.reuseId, for: indexPath) as? ImageCollectionViewCell else {return .init()}
+        guard let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: ImageCollectionViewCell.reuseId, for: indexPath) as? ImageCollectionViewCell else {return .init()}
+        cell.backgroundColor = .systemPink
         return cell
     }
 }

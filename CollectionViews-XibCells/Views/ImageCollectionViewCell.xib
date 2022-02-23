@@ -7,20 +7,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageCollectionViewCell" customModule="CollectionViews_XibCells" customModuleProvider="target">
-            <connections>
-                <outlet property="commonView" destination="HZp-wy-ET3" id="NUC-QK-RIV"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageCollectionViewCell" customModule="CollectionViews_XibCells" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="0fp-bo-0A1" customClass="ImageCollectionViewCell" customModule="CollectionViews_XibCells" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="Bmm-pL-Xl8" customClass="ImageCollectionViewCell" customModule="CollectionViews_XibCells" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HZp-wy-ET3">
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mb0-fl-jd5">
                 <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
             </collectionViewCellContentView>
-            <point key="canvasLocation" x="49" y="57"/>
+            <connections>
+                <outlet property="commonView" destination="Mb0-fl-jd5" id="IN0-ql-pry"/>
+            </connections>
+            <point key="canvasLocation" x="154" y="-81"/>
         </collectionViewCell>
     </objects>
 </document>
