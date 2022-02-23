@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class ImageCollectionViewCell: UICollectionViewCell {
-    
-    static var reuseId: String = "imageCell"
+class ImageCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var commonView: UIView!
+    
+    static var reuseId: String = "imageCell"
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,7 +26,6 @@ final class ImageCollectionViewCell: UICollectionViewCell {
     func initView() {
         Bundle.main.loadNibNamed("ImageCollectionViewCell", owner: self, options: nil)
         addSubview(commonView)
-        //commonView.frame = self.bounds
         NSLayoutConstraint.activate([
             commonView.leadingAnchor.constraint(equalTo: leadingAnchor),
             commonView.trailingAnchor.constraint(equalTo: trailingAnchor),
